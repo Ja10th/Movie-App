@@ -1,38 +1,115 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  place-items: center;
+  letter-spacing: 3px;
+  font-weight: 800;
+  padding: 2rem 0;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.App span {
+  color: #a3a0a0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .span2 {
+  color: rgba(109, 108, 108, 0.338);
 }
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.search > div {
+  max-width: 20%;
+  background: lightgray;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+
+.search-icon {
+  font-size: 25px;
+}
+
+.search > div > input {
+  border: none;
+  background: none;
+  outline: 0;
+  width: 300px;
+}
+
+.movie {
+  padding: 20px 40px;
+}
+
+.movie-image {
+  height: 380px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.movie-image:hover {
+  background-color: white;
+  opacity: 0.2;
+}
+.year {
+  display: none;
+  margin-bottom: -30px;
+  position: relative;
+  background: rgba(245, 245, 245, 0.535);
+  width: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.type {
+  opacity: 0;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  position: relative;
+  background: rgba(245, 245, 245, 0.535);
+  width: 54%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*# sourceMappingURL=App.css.map */
